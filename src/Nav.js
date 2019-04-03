@@ -45,7 +45,7 @@ const Nav = props => {
     <NavBar>
       <List>
         <li>
-          <NavButton to="/about">About</NavButton>
+          <NavButton to="/">About</NavButton>
         </li>
         <li>
           <NavButton to="/cats">Cats</NavButton>

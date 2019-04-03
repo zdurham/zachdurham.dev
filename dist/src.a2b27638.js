@@ -31887,7 +31887,7 @@ var NavButton = (0, _styled.default)(_reactRouterDom.Link)(_templateObject3());
 
 var Nav = function Nav(props) {
   return _react.default.createElement(NavBar, null, _react.default.createElement(List, null, _react.default.createElement("li", null, _react.default.createElement(NavButton, {
-    to: "/about"
+    to: "/"
   }, "About")), _react.default.createElement("li", null, _react.default.createElement(NavButton, {
     to: "/cats"
   }, "Cats")), _react.default.createElement("li", null, _react.default.createElement(NavButton, {
@@ -31898,7 +31898,7 @@ var Nav = function Nav(props) {
 var _default = (0, _react.memo)(Nav);
 
 exports.default = _default;
-},{"react":"node_modules/react/index.js","@emotion/styled":"node_modules/@emotion/styled/dist/styled.browser.esm.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js"}],"src/pages/Landing.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","@emotion/styled":"node_modules/@emotion/styled/dist/styled.browser.esm.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js"}],"src/pages/UnderConstruction.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -31912,48 +31912,8 @@ var _styled = _interopRequireDefault(require("@emotion/styled"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _templateObject5() {
-  var data = _taggedTemplateLiteral(["\n  color: grey;\n  margin: 0px 8px;\n  font-size: 2em;\n  &:hover {\n    color: #94d0ff;\n  }\n  transition: all 0.2s ease 0s;\n"]);
-
-  _templateObject5 = function _templateObject5() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject4() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: center;\n  align-items: center;\n"]);
-
-  _templateObject4 = function _templateObject4() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject3() {
-  var data = _taggedTemplateLiteral(["\n  width: 80%;\n  height: 2px;\n  margin-left: auto;\n  margin-right: auto;\n  background-color: #94d0ff;\n  border: none;\n"]);
-
-  _templateObject3 = function _templateObject3() {
-    return data;
-  };
-
-  return data;
-}
-
-function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n"]);
-
-  _templateObject2 = function _templateObject2() {
-    return data;
-  };
-
-  return data;
-}
-
 function _templateObject() {
-  var data = _taggedTemplateLiteral(["\n  font-family: \"Roboto\", \"sans-serif\";\n  font-weight: 900;\n  margin: 0px 0px 8px 0px;\n  font-size: 72px;\n  background: -webkit-linear-gradient(45deg, #94d0ff, #ff6ad5);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n"]);
+  var data = _taggedTemplateLiteral(["\n  height: 60px;\n  width: 100%;\n  text-align: center;\n  margin-top: 60px;\n  padding: 20px;\n  background-image: linear-gradient(90deg, #94d0ff, #ff6ad5);\n\n  > h2 {\n    color: black;\n    font-weight: 900;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -31964,18 +31924,58 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var GradientHeader = _styled.default.h1(_templateObject());
+var FullWidthBanner = _styled.default.div(_templateObject());
 
-var CenteredContainer = _styled.default.div(_templateObject2());
+var UnderConstruction = function UnderConstruction(props) {
+  return _react.default.createElement(FullWidthBanner, null, _react.default.createElement("h2", null, "Under Construction! Please come back later!"));
+};
 
-var Divider = _styled.default.hr(_templateObject3());
+var _default = UnderConstruction;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","@emotion/styled":"node_modules/@emotion/styled/dist/styled.browser.esm.js"}],"src/pages/About.js":[function(require,module,exports) {
+"use strict";
 
-var IconsContainer = _styled.default.div(_templateObject4());
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
 
-var IconLink = _styled.default.a(_templateObject5());
+var _react = _interopRequireDefault(require("react"));
 
-var Landing = function Landing(props) {
-  return _react.default.createElement(CenteredContainer, null, _react.default.createElement(GradientHeader, null, "Zach Durham"), _react.default.createElement(Divider, null), _react.default.createElement(IconsContainer, null, _react.default.createElement(IconLink, {
+var _styled = _interopRequireDefault(require("@emotion/styled"));
+
+var _UnderConstruction = _interopRequireDefault(require("./UnderConstruction"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _templateObject2() {
+  var data = _taggedTemplateLiteral(["\n  color: grey;\n  margin: 0px 8px;\n  font-size: 2em;\n  &:hover {\n    color: #94d0ff;\n  }\n  transition: all 0.2s ease 0s;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  justify-content: center;\n  align-items: center;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+var IconsContainer = _styled.default.div(_templateObject());
+
+var IconLink = _styled.default.a(_templateObject2());
+
+var About = function About(props) {
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(IconsContainer, null, _react.default.createElement(IconLink, {
     href: "https://github.com/zdurham"
   }, _react.default.createElement("i", {
     className: "fab fa-github-square"
@@ -31983,12 +31983,12 @@ var Landing = function Landing(props) {
     href: "mailto:zdurham101@gmail.com"
   }, _react.default.createElement("i", {
     class: "far fa-envelope"
-  }))));
+  }))), _react.default.createElement(_UnderConstruction.default, null));
 };
 
-var _default = Landing;
+var _default = About;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","@emotion/styled":"node_modules/@emotion/styled/dist/styled.browser.esm.js"}],"src/App.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","@emotion/styled":"node_modules/@emotion/styled/dist/styled.browser.esm.js","./UnderConstruction":"src/pages/UnderConstruction.js"}],"src/App.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -32002,14 +32002,36 @@ var _styled = _interopRequireDefault(require("@emotion/styled"));
 
 var _Nav = _interopRequireDefault(require("./Nav"));
 
-var _Landing = _interopRequireDefault(require("./pages/Landing"));
+var _About = _interopRequireDefault(require("./pages/About"));
+
+var _UnderConstruction = _interopRequireDefault(require("./pages/UnderConstruction"));
 
 var _reactRouterDom = require("react-router-dom");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _templateObject4() {
+  var data = _taggedTemplateLiteral(["\n  width: 80%;\n  height: 2px;\n  margin-left: auto;\n  margin-right: auto;\n  background-color: #94d0ff;\n  border: none;\n"]);
+
+  _templateObject4 = function _templateObject4() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject3() {
+  var data = _taggedTemplateLiteral(["\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n"]);
+
+  _templateObject3 = function _templateObject3() {
+    return data;
+  };
+
+  return data;
+}
+
 function _templateObject2() {
-  var data = _taggedTemplateLiteral(["\n\n"]);
+  var data = _taggedTemplateLiteral(["\n  font-family: \"Roboto\", \"sans-serif\";\n  font-weight: 900;\n  margin: 0px 0px 8px 0px;\n  font-size: 72px;\n  background: -webkit-linear-gradient(45deg, #94d0ff, #ff6ad5);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n"]);
 
   _templateObject2 = function _templateObject2() {
     return data;
@@ -32032,19 +32054,29 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var Background = _styled.default.div(_templateObject());
 
-var NameContainer = _styled.default.div(_templateObject2());
+var GradientHeader = _styled.default.h1(_templateObject2());
+
+var CenteredContainer = _styled.default.div(_templateObject3());
+
+var Divider = _styled.default.hr(_templateObject4());
 
 var App = function App(props) {
-  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(Background, null, _react.default.createElement(_reactRouterDom.BrowserRouter, null, _react.default.createElement(_Nav.default, null), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement(Background, null, _react.default.createElement(_reactRouterDom.BrowserRouter, null, _react.default.createElement(_Nav.default, null), _react.default.createElement(CenteredContainer, null, _react.default.createElement(GradientHeader, null, "Zach Durham"), _react.default.createElement(Divider, null), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
     exact: true,
     path: "/",
-    component: _Landing.default
-  })))));
+    component: _About.default
+  }), _react.default.createElement(_reactRouterDom.Route, {
+    path: "/cats",
+    component: _UnderConstruction.default
+  }), _react.default.createElement(_reactRouterDom.Route, {
+    path: "/contact",
+    component: _UnderConstruction.default
+  }))))));
 };
 
 var _default = App;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","@emotion/styled":"node_modules/@emotion/styled/dist/styled.browser.esm.js","./Nav":"src/Nav.js","./pages/Landing":"src/pages/Landing.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js"}],"src/index.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","@emotion/styled":"node_modules/@emotion/styled/dist/styled.browser.esm.js","./Nav":"src/Nav.js","./pages/About":"src/pages/About.js","./pages/UnderConstruction":"src/pages/UnderConstruction.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js"}],"src/index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
