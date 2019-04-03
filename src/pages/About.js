@@ -26,7 +26,7 @@ const About = props => {
           <i className="fab fa-github-square" />
         </IconLink>
         <IconLink href="mailto:zdurham101@gmail.com">
-          <i class="far fa-envelope" />
+          <i className="far fa-envelope" />
         </IconLink>
       </IconsContainer>
       <UnderConstruction />

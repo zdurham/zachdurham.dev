@@ -12,11 +12,19 @@ const NavBar = styled.div`
   padding: 0px 20px;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 640px) {
+    padding: 0;
+    justify-content: none;
+  }
 `;
 
 const List = styled.ul`
   display: flex;
+  margin: 0;
+  padding: 0;
   align-items: center;
+  justify-content: center;
   list-style: outside none none;
   flex-direction: horizontal;
   > li {
@@ -38,6 +46,10 @@ const NavButton = styled(Link)`
     border-bottom: 5px solid #94d0ff;
   }
   text-decoration: none !important;
+
+  @media (max-width: 640px) {
+    padding: 4px;
+  }
 `;
 
 const Nav = props => {

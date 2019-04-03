@@ -7,6 +7,11 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 const Background = styled.div`
   padding: 20px;
   padding-top: 50px;
+
+  @media (max-width: 640px) {
+    padding: 5px;
+    padding-top: 50px;
+  }
 `;
 
 const GradientHeader = styled.h1`
@@ -17,6 +22,10 @@ const GradientHeader = styled.h1`
   background: -webkit-linear-gradient(45deg, #94d0ff, #ff6ad5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  @media (max-width: 640px) {
+    font-size: 52px;
+  }
 `;
 
 const CenteredContainer = styled.div`
@@ -36,6 +45,8 @@ const Divider = styled.hr`
 `;
 
 const App = props => {
+
+  // $().modal().innerHTML = randomAffirmation;
   return (
     <>
       <Background>
@@ -52,6 +63,7 @@ const App = props => {
           </CenteredContainer>
         </Router>
       </Background>
+
     </>
   );
 };

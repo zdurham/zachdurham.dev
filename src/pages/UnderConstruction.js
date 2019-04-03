@@ -10,6 +10,7 @@ const FullWidthBanner = styled.div`
   background-image: linear-gradient(90deg, #94d0ff, #ff6ad5);
 
   > h2 {
+    margin: 0;
     color: black;
     font-weight: 900;
   }
