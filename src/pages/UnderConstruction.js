@@ -19,7 +19,7 @@ const FullWidthBanner = styled.div`
 const UnderConstruction = props => {
   return (
     <FullWidthBanner>
-      <h2>Under Construction! Please come back later!</h2>
+      <h2>Staging branch wooaaah</h2>
     </FullWidthBanner>
   );
 };
